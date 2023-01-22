@@ -1,9 +1,10 @@
 /** @format */
 #heart {
-  position: relative;
+  position: fixed;
+  bottom: 20px;
   width: 100px;
   height: 90px;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 #heart::before,
@@ -29,17 +30,30 @@
   transform-origin: 100% 100%;
 }
 body {
-  background-color: powderblue;
+  background-color: rgb(1, 20, 22);
   padding: 20px;
   font-size: 20px;
   border-top: 20px;
 }
 h1 {
   position: relative;
+  font-size: 350%;
+  color: rgba(55, 3, 29, 0.016);
+  color: silver;
+  text-shadow: 4px 4px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000,
+    4px 10px 1px #600000, 4px 12px 1px #700000, 4px 14px 1px #800000, 4px 16px 1px #900000,
+    4px 18px 1px #a00000, 4px 20px 1px #b00000, 4px 22px 1px #c00000, 4px 24px 1px #d00000,
+    4px 26px 1px #e00000, 4px 28px 1px #f00000, 4px 30px 1px #fa0000, 4px 32px 1px #fb0000,
+    4px 34px 1px #fc0000, 4px 36px 1px #fd0000, 4px 38px 1px #fe0000, 4px 40px 2px #ff0000;
+}
 
-  font-size: 200%;
-  color: rgba(255, 3, 133, 0.928);
-  text-shadow: 3px;
+
+#video{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  color: rgba(55, 3, 29, 0.016);
+  color: silver;
 }
 
 switch {
@@ -58,12 +72,17 @@ title {
 }
 
 .button:hover {
-  box-shadow: rgba(197, 5, 155, 0.953) 0px 10px 10px;
+  box-shadow: rgba(136, 31, 113, 0.953) 0px 10px 10px;
   background-color: white;
   -webkit-transform: translateY(0.12px);
   transform: translateY(-0.9px);
 }
-
+#clickme{
+  position: absolute;
+  bottom: 50px;
+  right: 00px;
+  top: 50%;
+}
 input {
   width: 300px;
   padding: 12px 20px;
@@ -72,16 +91,22 @@ input {
 }
 
 input:focus {
-  border-color: rgb(213, 14, 213);
+  border-color: rgb(71, 8, 71);
   border-width: 4px;
 }
 
 #bdaypic1 {
-  position: absolute;
+  position: fixed;
   width: 300px;
   height: 300px;
   bottom: 30px;
 }
+
+#bdaypic2 {
+  width: 300px;
+  height: 300px;
+}
+
 
 #loggedin {
   width: fit-content;
@@ -93,9 +118,11 @@ input:focus {
   border: darkblue;
 }
 
-#help {
-  position: fixed;
-  bottom: 10px;
+#clue{
+position: fixed;
+top: 250px;
+left: auto;
+font-size: medium;
 }
 
 #help:hover {
@@ -118,7 +145,7 @@ input:focus {
   bottom: 10px;
   left: 39rem;
   width: 200px;
-  background-color: rgb(233, 17, 207);
+  background-color: rgb(93, 11, 83);
   color: #fff;
   text-align: center;
   border-radius: 7px;
@@ -148,4 +175,122 @@ input:focus {
   border-bottom: 20px solid transparent;
   left: 32px;
   bottom: -24px;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.countdown {
+  margin: 100px auto;
+  width: 50%;
+  display: flex;
+  gap: 30px;
+  font-family: sans-serif;
+  
+}
+
+.time-section {
+  text-align: center;
+  font-size: 30px;
+}
+
+.time-group {
+  display: flex;
+  gap: 10px;
+}
+
+.time-segment {
+  display: block;
+  font-size: 100px;
+  font-weight: 900;
+  width: 100px;
+}
+
+.segment-display {
+  position: relative;
+  height: 100%;
+}
+
+.segment-display__top,
+.segment-display__bottom {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.segment-display__top {
+  line-height: 1.5;
+  color: rgb(229, 9, 9);
+  background-color: #111;
+}
+
+.segment-display__bottom {
+  line-height: 0;
+  color: rgb(215, 11, 11);
+  background-color: #333;
+}
+
+.segment-overlay {
+  position: absolute;
+  top: 0;
+  perspective: 400px;
+  height: 100%;
+  width: 100px;
+}
+
+.segment-overlay__top,
+.segment-overlay__bottom {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+
+.segment-overlay__top {
+  top: 0;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #111;
+  transform-origin: bottom;
+}
+
+.segment-overlay__bottom {
+  bottom: 0;
+  line-height: 0;
+  color: #eee;
+  background-color: #333;
+  border-top: 2px solid black;
+  transform-origin: top;
+}
+
+.segment-overlay.flip .segment-overlay__top {
+  animation: flip-top 0.8s linear;
+}
+
+.segment-overlay.flip .segment-overlay__bottom {
+  animation: flip-bottom 0.8s linear;
+}
+
+@keyframes flip-top {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50%,
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
+
+@keyframes flip-bottom {
+  0%,
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
 }
