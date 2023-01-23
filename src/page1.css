@@ -19,9 +19,9 @@ h1 {
 
 
 #video{
-  position: relative;
-  bottom: 30px;
-  right: 40px;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
   color: rgba(55, 3, 29, 0.016);
   color: silver;
 }
@@ -155,9 +155,9 @@ font-size: medium;
   margin: 100px auto;
   width: 50%;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   font-family: sans-serif;
-  
+
 }
 
 .time-section {
