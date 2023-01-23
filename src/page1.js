@@ -12,7 +12,9 @@ function login() {
       "Incorrect username or passwrd please verify them and try again BEFORE THE WORLD ENDS!!!!!",
     );
   } else {
-    alert("well done you SAVED THE GODAM WORLD MARIA!!!!!!");
+    alert(
+      "well done you SAVED THE GODAM WORLD MARIA!!!!!! YOU EARNED YOURSELF ONE TIME BEING EATEN OUR BY YOUR BOYFRIEND ELI",
+    );
     changetitle();
     showpics();
   }
@@ -32,18 +34,13 @@ function showpics() {
   x.style.display = "none";
 }
 
-function popup() {
-  var y = document.getElementById("clue");
-  if ((y.style.display = "none")) y.style.display = "block";
-  else {
-    y.style.display = "none";
-  }
-}
 function play() {
   var m = document.getElementById("clue");
-  if ((m.style.display = "none")) m.style.display = "block";
-  else {
-    m.style.display = "none";
+  var c = prompt("enter your boyfriends name to unlock the next clue");
+  if (c == "Elichay") {
+    (m.style.display = "none"), (m.style.display = "block");
+  } else {
+    alert("you dont know your own boyfriend name????");
   }
 }
 
@@ -155,5 +152,4 @@ const countdownTimer = setInterval(() => {
     clearInterval(countdownTimer);
   }
 }, 1000);
-
 updateAllSegments();
