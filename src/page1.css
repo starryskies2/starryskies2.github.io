@@ -7,7 +7,7 @@ body {
 }
 h1 {
   position: relative;
-  font-size: 350%;
+  font-size: 150%;
   color: rgba(55, 3, 29, 0.016);
   color: rgb(111, 106, 106);
   text-shadow: 4px 4px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000,
@@ -19,7 +19,7 @@ h1 {
 
 
 #video{
-  position: fixed;
+  position: relative;
   bottom: 30px;
   right: 40px;
   color: rgba(55, 3, 29, 0.016);
@@ -48,7 +48,7 @@ title {
   transform: translateY(-0.9px);
 }
 #clickme{
-  position: absolute;
+  position: relative;
   bottom: 50px;
   right: 00px;
   top: 50%;
