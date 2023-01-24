@@ -10,11 +10,8 @@ h1 {
   font-size: 150%;
   color: rgba(55, 3, 29, 0.016);
   color: rgb(111, 106, 106);
-  text-shadow: 4px 4px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000,
-    4px 10px 1px #600000, 4px 12px 1px #700000, 4px 14px 1px #800000, 4px 16px 1px #900000,
+  text-shadow: 3px 3px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000,
     4px 18px 1px #a00000, 4px 20px 1px #b00000, 4px 22px 1px #c00000, 4px 24px 1px #d00000,
-    4px 26px 1px #e00000, 4px 28px 1px #f00000, 4px 30px 1px #fa0000, 4px 32px 1px #fb0000,
-    4px 34px 1px #fc0000, 4px 36px 1px #fd0000, 4px 38px 1px #fe0000, 4px 40px 2px #ff0000;
 }
 
 
@@ -48,7 +45,7 @@ title {
   transform: translateY(-0.9px);
 }
 #clickme{
-  position: relative;
+  position: static;
   bottom: 50px;
   right: 00px;
   top: 50%;

@@ -1,9 +1,8 @@
 /** @format */
-
+// iphone 12 pro max Ios version 16.2
 var hour = 00;
 var minute = 10;
 var seconds = 00;
-
 function login() {
   var Username = document.getElementById("username");
   var Password = document.getElementById("password");
