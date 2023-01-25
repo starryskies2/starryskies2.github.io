@@ -7,17 +7,16 @@ body {
 }
 h1 {
   position: relative;
-  font-size: 150%;
+  font-size: 130%;
   color: rgba(55, 3, 29, 0.016);
   color: rgb(111, 106, 106);
   text-shadow: 3px 3px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000,
     4px 18px 1px #a00000, 4px 20px 1px #b00000, 4px 22px 1px #c00000, 4px 24px 1px #d00000,
 }
 
-
 #video{
   position: fixed;
-  bottom: 300px;
+  bottom: 310px;
   right: 100px;
   color: rgba(55, 3, 29, 0.016);
   color: silver;
