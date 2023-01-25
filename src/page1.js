@@ -3,6 +3,7 @@
 var hour = 00;
 var minute = 10;
 var seconds = 00;
+
 function login() {
   var Username = document.getElementById("username");
   var Password = document.getElementById("password");
@@ -38,6 +39,8 @@ function play() {
   var c = prompt("enter your boyfriends name to unlock the next clue");
   if (c == "Elichay") {
     (m.style.display = "none"), (m.style.display = "block");
+    var sample = document.getElementById("foobar");
+    sample.play();
   } else {
     alert("you dont know your own boyfriend name????");
   }

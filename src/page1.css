@@ -5,19 +5,23 @@ body {
   font-size: 20px;
   border-top: 20px;
 }
+#foobar {
+  display: none
+ }
+
 h1 {
   position: relative;
-  font-size: 130%;
+  font-size: 190%;
   color: rgba(55, 3, 29, 0.016);
   color: rgb(111, 106, 106);
   text-shadow: 3px 3px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000,
-    4px 18px 1px #a00000, 4px 20px 1px #b00000, 4px 22px 1px #c00000, 4px 24px 1px #d00000,
+    4px 18px 1px #a00000, 4px 20px 1px #b00000;
 }
 
 #video{
   position: fixed;
-  bottom: 310px;
-  right: 100px;
+  bottom: 510px;
+  right: 90px;
   color: rgba(55, 3, 29, 0.016);
   color: silver;
 }
@@ -44,10 +48,9 @@ title {
   transform: translateY(-0.9px);
 }
 #clickme{
-  position: static;
-  bottom: 50px;
-  right: 00px;
-  top: 50%;
+  position: fixed;
+  bottom: 100px;
+  right: 5%;
 }
 input {
   width: 300px;
