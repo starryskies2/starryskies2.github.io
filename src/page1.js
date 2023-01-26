@@ -38,10 +38,27 @@ function play() {
   var m = document.getElementById("clue1");
   var c = prompt("enter your boyfriends name to unlock the next clue");
   if (c == "Elichay") {
-    (m.style.display = "none"), (m.style.display = "block");
+    m.style.display = "block";
+    setTimeout(startclue2, 5000);
   } else {
     alert("you dont know your own boyfriend name???");
   }
+}
+function clue2() {
+  let t = prompt(
+    "who is the most amazing,smart,kind,beutilful women in the world?whats her full name? (case sensetive)",
+  );
+  if ((t = "Maria Carmen Siapno")) {
+    alert(
+      "well done,your next clue is the password which is VERY important date for us times 2",
+    );
+  } else {
+    alert("nope,wrong answer maam please try again");
+  }
+}
+function startclue2() {
+  var v = document.getElementById("clue2");
+  v.style.display = "block";
 }
 function timerstart() {
   var sample = document.getElementById("foobar");

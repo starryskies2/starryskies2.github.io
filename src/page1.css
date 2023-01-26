@@ -94,6 +94,12 @@ left: auto;
 font-size: medium;
 }
 
+#clue2{
+  position: fixed;
+  top: 790px;
+  left: auto;
+  font-size: medium;
+}
 #help:hover {
   box-shadow: rgba(0, 0, 0, 0.851) 0px 2px 2px;
 }
