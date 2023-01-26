@@ -50,7 +50,7 @@ title {
 #clickme{
   position: fixed;
   bottom: 100px;
-  right: 5%;
+  right: 5.5%;
 }
 input {
   width: 300px;
@@ -61,7 +61,7 @@ input {
 
 input:focus {
   border-color: rgb(133, 26, 133);
-  border-width: 4px;
+  border-width: 5px;
 }
 
 #bdaypic1 {

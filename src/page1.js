@@ -42,7 +42,7 @@ function play() {
     var sample = document.getElementById("foobar");
     sample.play();
   } else {
-    alert("you dont know your own boyfriend name????");
+    alert("you dont know your own boyfriend name???");
   }
 }
 
@@ -136,7 +136,6 @@ function getTimeRemaining(targetDateTime) {
     hours,
   };
 }
-
 function updateAllSegments() {
   const timeRemainingBits = getTimeRemaining(new Date(targetDate).getTime());
 
