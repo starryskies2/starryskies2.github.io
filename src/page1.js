@@ -60,7 +60,15 @@ function startclue2() {
   var v = document.getElementById("clue2");
   v.style.display = "block";
 }
+var myVideo = document.getElementById("video");
+function playVideo() {
+  video.play();
+}
+function pauseVideo() {
+  video.pause();
+}
 function timerstart() {
+  playVideo();
   var sample = document.getElementById("foobar");
   sample.play();
   const targetDate = new Date();
