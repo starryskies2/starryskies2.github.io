@@ -25,7 +25,11 @@ h1 {
   color: rgba(55, 3, 29, 0.016);
   color: silver;
 }
-
+#clickme{
+  position: fixed;
+  bottom: 400px;
+  right: 4.5%;
+}
 switch {
   size: 100px;
 }
@@ -40,18 +44,13 @@ title {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
   text-align: center;
 }
-
 .button:hover {
   box-shadow: rgba(136, 31, 113, 0.953) 0px 10px 10px;
   background-color: white;
   -webkit-transform: translateY(0.12px);
   transform: translateY(-0.9px);
 }
-#clickme{
-  position: fixed;
-  bottom: 100px;
-  right: 5.5%;
-}
+
 input {
   width: 300px;
   padding: 12px 20px;

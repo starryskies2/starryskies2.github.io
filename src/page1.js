@@ -39,7 +39,7 @@ function play() {
   var c = prompt("enter your boyfriends name to unlock the next clue");
   if (c == "Elichay") {
     m.style.display = "block";
-    setTimeout(startclue2, 5000);
+    setTimeout(startclue2, 10000);
   } else {
     alert("you dont know your own boyfriend name???");
   }
