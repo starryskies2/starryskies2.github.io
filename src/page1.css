@@ -6,8 +6,12 @@ body {
   border-top: 20px;
 }
 #foobar {
-  display: none
+  display: none;
  }
+
+#audiobday{
+  display: none;
+}
 
 h1 {
   position: relative;
@@ -60,7 +64,7 @@ input {
 
 input:focus {
   border-color: rgb(133, 26, 133);
-  border-width: 5px;
+  border-width: 8px;
 }
 
 #bdaypic1 {
@@ -143,9 +147,9 @@ font-size: medium;
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 24px solid #fff;
+  border-left: 24px solid rgb(233, 227, 227);
   border-right: 12px solid transparent;
-  border-top: 12px solid #fff;
+  border-top: 12px solid rgb(221, 215, 215);
   border-bottom: 20px solid transparent;
   left: 32px;
   bottom: -24px;
@@ -197,13 +201,13 @@ font-size: medium;
 
 .segment-display__top {
   line-height: 1.5;
-  color: rgb(229, 9, 9);
+  color: rgb(226, 11, 11);
   background-color: #111;
 }
 
 .segment-display__bottom {
   line-height: 0;
-  color: rgb(215, 11, 11);
+  color: rgb(213, 19, 19);
   background-color: rgb(24, 22, 22);
 }
 

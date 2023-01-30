@@ -3,7 +3,8 @@
 var hour = 00;
 var minute = 10;
 var seconds = 00;
-
+var i = 1;
+const myTimeout = setTimeout(clockloop, 100000);
 function login() {
   var Username = document.getElementById("username");
   var Password = document.getElementById("password");
@@ -64,16 +65,25 @@ var myVideo = document.getElementById("video");
 function playVideo() {
   video.play();
 }
-function pauseVideo() {
-  video.pause();
+function clockloop() {
+  setTimeout(function () {
+    var sample = document.getElementById("foobar");
+    sample.play();
+    i++;
+    if (i < 13) {
+      clockloop();
+    }
+  }, 25500);
+}
+function myStopFunction() {
+  clearTimeout(myTimeout);
 }
 function timerstart() {
-  playVideo();
-  var sample = document.getElementById("foobar");
-  sample.play();
+  //myStopFunction();
+  playVideo(); //plays the video
+  clockloop(); //plays the ticking sound
   const targetDate = new Date();
   targetDate.setMinutes(targetDate.getMinutes() + 10);
-
   function getTimeSegmentElements(segmentElement) {
     const segmentDisplay = segmentElement.querySelector(".segment-display");
     const segmentDisplayTop = segmentDisplay.querySelector(".segment-display__top");
@@ -91,7 +101,6 @@ function timerstart() {
       segmentOverlayBottom,
     };
   }
-
   function updateSegmentValues(displayElement, overlayElement, value) {
     displayElement.textContent = value;
     overlayElement.textContent = value;
