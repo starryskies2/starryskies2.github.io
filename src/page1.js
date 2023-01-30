@@ -1,5 +1,6 @@
 /** @format */
 // iphone 12 pro max Ios version 16.2
+//record a video of yourself saying bday etc,and then upload it as part of the suprise
 var hour = 00;
 var minute = 10;
 var seconds = 00;
@@ -61,8 +62,9 @@ function startclue2() {
   var v = document.getElementById("clue2");
   v.style.display = "block";
 }
-var myVideo = document.getElementById("video");
+
 function playVideo() {
+  var video = document.getElementById("video");
   video.play();
 }
 function clockloop() {
