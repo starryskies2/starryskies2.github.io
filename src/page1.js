@@ -78,12 +78,11 @@ function clockloop() {
   }, 25500);
 }
 function myStopFunction() {
-  clearTimeout(myTimeout);
+  clearTimeout(myTimeout); //double check whats cleartimeout function does and make sure its working
 }
 function timerstart() {
-  //myStopFunction();
-  playVideo(); //plays the video
-  clockloop(); //plays the ticking sound
+  playVideo();
+  clockloop();
   const targetDate = new Date();
   targetDate.setMinutes(targetDate.getMinutes() + 10);
   function getTimeSegmentElements(segmentElement) {
