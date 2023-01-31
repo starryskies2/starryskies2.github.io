@@ -15,11 +15,16 @@ function login() {
     );
   } else {
     alert(
-      "well done you SAVED THE GODAM WORLD MARIA!!!!!! YOU EARNED YOURSELF ONE TIME BEING EATEN OUR BY YOUR BOYFRIEND ELI",
+      "well done you SAVED THE GODAM WORLD MARIA!!!!!! YOU EARNED YOURSELF ONE TIME BEING EATEN OUT BY YOUR BOYFRIEND ELI",
     );
     changetitle();
     showpics();
+    playfinalsound();
   }
+}
+function playfinalsound() {
+  var sample = document.getElementById("audiobday");
+  sample.play();
 }
 function changetitle() {
   document.getElementById("h1").innerHTML =
