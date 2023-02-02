@@ -42,9 +42,9 @@ title {
 }
 .button {
   background-color: white;
-  border: rgba(201, 10, 173, 0.579);
-  padding: 10px;
-  margin: 10px;
+  border: rgba(114, 12, 99, 0.579);
+  padding: 8px;
+  margin: 8px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
   text-align: center;
 }
@@ -63,8 +63,9 @@ input {
 }
 
 input:focus {
-  border-color: rgb(133, 26, 133);
-  border-width: 8px;
+  border-color: rgb(218, 55, 218);
+  border-width: 7px;
+  
 }
 
 #bdaypic1 {
@@ -92,7 +93,7 @@ input:focus {
 
 #clue1{
 position: fixed;
-top: 250px;
+top: 260px;
 left: auto;
 font-size: medium;
 }
