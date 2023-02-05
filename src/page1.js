@@ -80,7 +80,7 @@ function clockloop() {
     if (i < 13) {
       clockloop();
     }
-  }, 25500);
+  }, 25400);
 }
 function myStopFunction() {
   clearTimeout(myTimeout);
