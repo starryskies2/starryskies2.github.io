@@ -42,10 +42,12 @@ function showpics() {
 }
 
 function play() {
-  var m = document.getElementById("clue1");
-  var c = prompt("enter your boyfriends name to unlock the next clue");
+  var m = document.getElementById("clue2");
+  var c = prompt("enter your boyfriends name to unlock the next clue(uppercase)");
   if (c == "Elichay") {
     m.style.display = "block";
+    document.getElementById("clickme").value =
+      "click to get clue num 1 again (while sayin who is amazing!!)";
     setTimeout(startclue2, 10000);
   } else {
     alert("you dont know your own boyfriend name???");
@@ -65,6 +67,8 @@ function clue2() {
 }
 function startclue2() {
   var v = document.getElementById("clue2");
+  var m = document.getElementById("clue1");
+  m.style.display = "none";
   v.style.display = "block";
 }
 
