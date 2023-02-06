@@ -42,7 +42,7 @@ function showpics() {
 }
 
 function play() {
-  var m = document.getElementById("clue2");
+  var m = document.getElementById("clue1");
   var c = prompt("enter your boyfriends name to unlock the next clue(uppercase)");
   if (c == "Elichay") {
     m.style.display = "block";
@@ -183,11 +183,9 @@ function timerstart() {
   }
   function updateAllSegments() {
     const timeRemainingBits = getTimeRemaining(new Date(targetDate).getTime());
-
     updateTimeSection("seconds", timeRemainingBits.seconds);
     updateTimeSection("minutes", timeRemainingBits.minutes);
     updateTimeSection("hours", timeRemainingBits.hours);
-
     return timeRemainingBits.complete;
   }
 
