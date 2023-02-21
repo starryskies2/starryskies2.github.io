@@ -15,7 +15,7 @@ function login() {
     );
   } else {
     alert(
-      "well done you SAVED THE GODAM WORLD MARIA!!!!!! YOU EARNED YOURSELF ONE TIME BEING EATEN OUT BY YOUR BOYFRIEND ELI",
+      "well done you SAVED THE GODAM WORLD MARIA!!!!!! YOU EARNED YOURSELF ONE TIME BEING EATEN OUT BY YOUR BOYFRIEND ELI(use it wisely)",
     );
     changetitle();
     showpics();
@@ -59,7 +59,7 @@ function clue2() {
   );
   if ((t = "Maria Carmen Siapno")) {
     alert(
-      "well done,your next clue is the password which is VERY important date for us times 2",
+      "well done,your next clue is the password which is VERY important date for us.add both the month and days",
     );
   } else {
     alert("nope,wrong answer maam please try again");
