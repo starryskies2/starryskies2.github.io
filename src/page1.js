@@ -2,10 +2,10 @@
 // iphone 12 pro max Ios version 16.2
 //record a video of yourself saying bday etc,and then upload it as part of the suprise
 var hour = 00;
-var minute = 10;
+var minute = 8;
 var seconds = 00;
 var i = 1;
-const myTimeout = setTimeout(clockloop, 100000);
+const myTimeout = setTimeout(clockloop, 90000);
 function login() {
   var Username = document.getElementById("username");
   var Password = document.getElementById("password");
@@ -19,6 +19,7 @@ function login() {
     );
     changetitle();
     showpics();
+    hidevideo();
     playfinalsound();
   }
 }
@@ -32,18 +33,25 @@ function changetitle() {
   document.body.style.backgroundColor = "pink";
   document.getElementById("h1").style.color = "rgb(147, 255, 212)";
 }
+
+function hidevideo() {
+  var v = document.getElementById("video");
+  v.style.display = "none";
+}
 function showpics() {
   var y = document.getElementById("bdaypic1");
   y.style.display = "block";
   var c = document.getElementById("bdaypic2");
   c.style.display = "block";
+  var z = document.getElementById("bdaypic3");
+  z.style.display = "block";
   var x = document.getElementById("nuke");
   x.style.display = "none";
 }
 
 function play() {
   var m = document.getElementById("clue1");
-  var c = prompt("enter your boyfriends name to unlock the next clue(uppercase)");
+  var c = prompt("enter your boyfriends name to unlock the next clue");
   if (c == "Elichay") {
     m.style.display = "block";
     document.getElementById("clickme").value =
@@ -59,7 +67,7 @@ function clue2() {
   );
   if ((t = "Maria Carmen Siapno")) {
     alert(
-      "well done,your next clue is the password which is VERY important date for us.add both the month and days",
+      "well done,your next clue is the password which is VERY important date for us.add both the month and days to get the answer",
     );
   } else {
     alert("nope,wrong answer maam please try again");
@@ -84,7 +92,7 @@ function clockloop() {
     if (i < 13) {
       clockloop();
     }
-  }, 25300);
+  }, 25400);
 }
 function myStopFunction() {
   clearTimeout(myTimeout);
@@ -94,7 +102,7 @@ function timerstart() {
   clockloop();
   myStopFunction();
   const targetDate = new Date();
-  targetDate.setMinutes(targetDate.getMinutes() + 10);
+  targetDate.setMinutes(targetDate.getMinutes() + 8);
   function getTimeSegmentElements(segmentElement) {
     const segmentDisplay = segmentElement.querySelector(".segment-display");
     const segmentDisplayTop = segmentDisplay.querySelector(".segment-display__top");
