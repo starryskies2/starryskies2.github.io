@@ -1,6 +1,5 @@
 /** @format */
-// iphone 12 pro max Ios version 16.2
-//record a video of yourself saying bday etc,and then upload it as part of the suprise
+
 var hour = 00;
 var minute = 8;
 var seconds = 00;
@@ -9,14 +8,12 @@ const myTimeout = setTimeout(clockloop, 90000);
 function login() {
   var Username = document.getElementById("username");
   var Password = document.getElementById("password");
-  if (Password.value !== "24" && Username.value !== "Maria") {
+  if (Password.value !== "" && Username.value !== "") {
     alert(
       "Incorrect username or passwrd please verify them and try again BEFORE THE WORLD ENDS!!!!!",
     );
   } else {
-    alert(
-      "well done you SAVED THE GODAM WORLD MARIA!!!!!! YOU EARNED YOURSELF ONE TIME BEING EATEN OUT BY YOUR BOYFRIEND ELI(use it wisely)",
-    );
+    alert();
     changetitle();
     showpics();
     hidevideo();
@@ -51,26 +48,19 @@ function showpics() {
 
 function play() {
   var m = document.getElementById("clue1");
-  var c = prompt("enter your boyfriends name to unlock the next clue");
+  var c = prompt("");
   if (c == "Elichay") {
     m.style.display = "block";
-    document.getElementById("clickme").value =
-      "click to get clue num 1 again (while sayin who is amazing!!)";
     setTimeout(startclue2, 10000);
   } else {
-    alert("you dont know your own boyfriend name???");
+    alert("");
   }
 }
 function clue2() {
-  let t = prompt(
-    "who is the most amazing,smart,kind,beutilful women in the world?whats her full name? (case sensetive)",
-  );
-  if ((t = "Maria Carmen Siapno")) {
-    alert(
-      "well done,your next clue is the password which is VERY important date for us.add both the month and days to get the answer",
-    );
+  let t = prompt();
+  if ((t = "")) {
+    alert();
   } else {
-    alert("nope,wrong answer maam please try again");
   }
 }
 function startclue2() {
