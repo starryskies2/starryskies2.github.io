@@ -9,43 +9,7 @@ body {
   display: none;
  }
 
- #audiobday{
-  display: none;
-}
-
-h1 {
-  position: relative;
-  font-size: 190%;
-  color: rgba(55, 3, 29, 0.016);
-  color: rgb(111, 106, 106);
-  text-shadow: 3px 3px 1px #300000, 4px 6px 1px #400000, 4px 8px 1px #500000,
-    4px 18px 1px #a00000, 4px 20px 1px #b00000;
-}
-
-#video{
-  position: fixed;
-  bottom: 510px;
-  right: 90px;
-  color: rgba(55, 3, 29, 0.016);
-  color: silver;
-}
-#clickme{
-  position: fixed;
-  bottom: 400px;
-  right: 4.5%;
-  background-color: white;
-  border: rgba(49, 2, 42, 0.579);
-  padding: 12px;
-  margin: 12px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
-  text-align: center;
-}
-#clickme:hover{
-  box-shadow: rgba(64, 2, 51, 0.953) 0px 10px 10px;
-  background-color: white;
-  -webkit-transform: translateY(0.12px);
-  transform: translateY(-0.9px);
-}
+ 
 switch {
   size: 100px;
 }
